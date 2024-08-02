@@ -1,0 +1,87 @@
+.hero {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 800px;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),  url('https://sp-ao.shortpixel.ai/client/to_auto,q_glossy,ret_img,w_612/https://www.virtualdoctors.ng/vmedia/2023/08/18-jpg.webp');
+}
+
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+.carousel {
+    overflow: hidden;
+    position: relative;
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.3s ease;
+}
+
+.carousel-item {
+    min-width: 100%;
+}
+
+.carousel-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.5);
+    padding: 0.5rem;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.carousel-nav.left {
+    left: 0.5rem;
+}
+
+.carousel-nav.right {
+    right: 0.5rem;
+}
+
+.dropbtn {
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #f1f1f1}
+  
+  /* dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+.min-h-screen-with-footer {
+    min-height: calc(100vh - 200px); 
+}

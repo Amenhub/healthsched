@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real-Time Booking - HealthSched</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body class="bg-gray-50">
+    <!-- Navbar -->
+    <nav class="bg-white shadow-lg h-20">
+        <div class="container mx-auto px-4 py-2 flex justify-between items-center h-full">
+            <a href="/index.html" class="flex items-center">
+                <img src="/img/logo.png" alt="HealthSched Logo" class="h-14">
+            </a>
+            <ul class="flex space-x-4 items-center">
+                <li><a href="/index.html" class="text-gray-600 hover:text-blue-600">Home</a></li>
+                <li><a href="/html/aboutus.html" class="text-gray-600 hover:text-blue-600">About Us</a></li>
+                <div class="dropdown">
+                    <button class="dropbtn">Services</button>
+                    <div class="dropdown-content">
+                        <a href="/html/realtimebooking.html" class="block px-4 py-2 text-gray-600 hover:text-blue-600">Real-Time Booking</a>
+                        <a href="/html/telemedicine.html" class="block px-4 py-2 text-gray-600 hover:text-blue-600">Telemedicine</a>
+                        <a href="/html/health_resource.html" class="block px-4 py-2 text-gray-600 hover:text-blue-600">Health Resources</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn">Blog</button>
+                    <div class="dropdown-content">
+                        <a href="/html/health_tips.html" class="block px-4 py-2 text-gray-600 hover:text-blue-600">Health Tips</a></li>
+                        <a href="/html/industry_news.html" class="block px-4 py-2 text-gray-600 hover:text-blue-600">Industry News</a></li>
+                    </div>
+                </div>
+                <li><a href="/html/contact_us.html" class="text-gray-600 hover:text-blue-600">Contact</a></li>
+                <li><a href="/html/sigin.html" class="text-gray-600 hover:text-blue-600">Sign In</a></li>
+                <li><a href="/html/signup.html" class="text-white bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-lg">Sign Up</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Mini Hero Section -->
+    <section class="bg-cover bg-center h-40 text-white flex items-center justify-center relative" style="background-image: url('/img/service-1.jpg');">
+        <div class="absolute inset-0 bg-blue-900 opacity-50"></div>
+        <div class="relative z-10">
+            <h2 class="text-2xl font-bold">Service | Real-Time Booking</h2>
+        </div>
+    </section>
+
+    <!-- Service Overview Section -->
+    <div class="container mx-auto px-4 py-8">
+        <div class="text-center mb-8">
+            <h1 class="text-3xl font-bold mb-4">Real-Time Doctor Appointment Booking</h1>
+            <p class="text-gray-700 leading-relaxed">Our real-time booking service allows patients to schedule appointments with doctors easily and efficiently. With just a few clicks, you can find available time slots, book your appointment, and receive instant confirmation. This service helps to reduce waiting times and improve patient satisfaction.</p>
+        </div>
+    </div>
+
+    <!-- Booking Form Section -->
+    <div class="container bg-blue-100 mx-auto px-4 py-8 min-h-screen-with-footer">
+        <div class="text-center mb-8">
+            <h1 class="text-3xl font-bold mb-4">Appointment Form</h1>
+            <p class="text-gray-700 leading-relaxed">Easily schedule your appointments with our real-time booking system. Get instant confirmations, reminders, and updates.</p>
+        </div>
+
+        <div class="max-w-lg mx-auto bg-red-600 p-6 rounded-lg shadow-lg">
+            <form>
+                <div class="mb-4">
+                    <label for="full-name" class="block text-white">Full Name</label>
+                    <input type="text" id="full-name" class="form-input w-full px-4 py-2 border rounded-lg shadow-sm" placeholder="Israel Ayinde" required>
+                </div>
+                <div class="mb-4">
+                    <label for="email" class="block text-white">Email</label>
+                    <input type="email" id="email" class="form-input w-full px-4 py-2 border rounded-lg shadow-sm" placeholder="israel.ayinde@example.com" required>
+                </div>
+                <div class="mb-4">
+                    <label for="phone" class="block text-white">Phone Number</label>
+                    <input type="tel" id="phone" class="form-input w-full px-4 py-2 border rounded-lg shadow-sm" placeholder="123-456-7890" required>
+                </div>
+                <div class="mb-4">
+                    <label for="appointment-date" class="block text-white">Appointment Date</label>
+                    <input type="date" id="appointment-date" class="form-input w-full px-4 py-2 border rounded-lg shadow-sm" required>
+                </div>
+                <div class="mb-4">
+                    <label for="appointment-time" class="block text-white">Appointment Time</label>
+                    <input type="time" id="appointment-time" class="form-input w-full px-4 py-2 border rounded-lg shadow-sm" required>
+                </div>
+                <div class="mb-4">
+                    <label for="doctor" class="block text-white">Select Doctor</label>
+                    <select id="doctor" class="form-select w-full px-4 py-2 border rounded-lg shadow-sm" required>
+                        <option value="" disabled selected>Select a doctor</option>
+                        <option value="dr-jane-doe">Dr. Israel Ayinde</option>
+                        <option value="dr-john-smith">Dr. Victor Ayinde</option>
+                        <option value="dr-emily-jones">Dr. Israel Victor</option>
+                    </select>
+                </div>
+                <div class="flex items-center mb-6">
+                    <input type="checkbox" id="reminder" class="form-checkbox h-5 w-5 text-white">
+                    <label for="reminder" class="ml-2 text-white">Enable Automated Reminders</label>
+                </div>
+                <div class="mb-4">
+                    <label for="reminder-method" class="block text-white">Reminder Method</label>
+                    <select id="reminder-method" class="form-select w-full px-4 py-2 border rounded-lg shadow-sm">
+                        <option value="" disabled selected>Select a reminder method</option>
+                        <option value="email">Email</option>
+                        <option value="sms">SMS</option>
+                        <option value="google-calendar">Google Calendar</option>
+                    </select>
+                </div>
+                <div class="flex items-center justify-between">
+                    <button type="submit" class="bg-white text-blue-600 font-semibold py-2 px-4 rounded-lg shadow-lg">Book Appointment</button>
+                    <a href="#" class="text-white hover:underline">Cancel</a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- AI Automation Prompt -->
+    <div id="ai-prompt" class="fixed bottom-4 right-4 bg-white shadow-lg p-4 rounded-lg w-80">
+        <div class="flex justify-between items-center">
+            <h4 class="text-lg font-bold text-blue-600">Ask Me Anything</h4>
+            <button onclick="" class="text-gray-600 hover:text-blue-600">-</button>
+        </div>
+        <div class="mt-2">
+            <input type="text" id="ai-question" class="w-full p-2 border rounded-lg" placeholder="Type your question...">
+            <button onclick="" class="mt-2 bg-blue-600 text-white px-4 py-2 rounded-lg">Submit</button>
+        </div>
+        <div class="mt-4 text-gray-600"></div>
+    </div>
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-gray-400 py-8">
+        <div class="container mx-auto px-4 items-center w-4/5">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-lg font-bold text-white">HealthSched</h3>
+                    <p class="mt-2 text-gray-400">Efficient Healthcare Appointment Scheduling</p>
+                </div>
+                <div>
+                    <h4 class="text-md font-bold text-white">Quick Links</h4>
+                    <ul class="mt-2 space-y-2">
+                        <li><a href="index.html" class="hover:text-white">Home</a></li>
+                        <li><a href="/html/service.html" class="hover:text-white">Services</a></li>
+                        <li><a href="/html/health_tips.html" class="hover:text-white">Blog</a></li>
+                        <li><a href="/html/aboutus.html" class="hover:text-white">About Us</a></li>
+                        <li><a href="/html/contact_us.html" class="hover:text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-md font-bold text-white">Subscribe</h4>
+                    <form action="#" class="mt-2">
+                        <input type="email" placeholder="Enter your email" class="w-full p-2 border rounded-lg">
+                        <button type="submit" class="mt-2 bg-blue-600 text-white px-4 py-2 rounded-lg">Subscribe</button>
+                    </form>
+                </div>
+                <div>
+                    <h4 class="text-md font-bold text-white">Follow Us</h4>
+                    <ul class="mt-2 flex space-x-4">
+                        <li><a href="#" class="hover:text-white"><i class="fab fa-facebook-f"></i> Facebook</a></li>
+                        <li><a href="#" class="hover:text-white"><i class="fab fa-twitter"></i> Twitter</a></li>
+                        <li><a href="#" class="hover:text-white"><i class="fab fa-linkedin-in"></i> LinkedIn</a></li>
+                        <li><a href="#" class="hover:text-white"><i class="fab fa-instagram"></i> Instagram</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mt-8 text-center">
+                <p>&copy; 2024 HealthSched. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Telemedicine | HealthSched</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body class="bg-gray-50">
+    <!-- Navbar -->
+    <nav class="bg-white shadow-lg h-20">
+        <div class="container mx-auto px-4 py-2 flex justify-between items-center h-full w-4/5">
+            <a href="/index.html" class="flex items-center">
+                <img src="/img/logo.png" alt="HealthSched Logo" class="h-14">
+            </a>
+            <ul class="flex space-x-4 items-center">
+                <li><a href="/index.html" class="text-gray-600 hover:text-blue-600">Home</a></li>
+                <li><a href="/html/aboutus.html" class="text-gray-600 hover:text-blue-600">About Us</a></li>
+                <div class="dropdown">
+                    <button class="dropbtn">Services</button>
+                    <div class="dropdown-content">
+                        <a href="/html/realtimebooking.html" class="block px-4 py-2 text-gray-600 hover:text-blue-600">Real-Time Booking</a>
+                        <a href="/html/telemedicine.html" class="block px-4 py-2 text-gray-600 hover:text-blue-600">Telemedicine</a>
+                        <a href="/html/health_resource.html" class="block px-4 py-2 text-gray-600 hover:text-blue-600">Health Resources</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn">Blog</button>
+                    <div class="dropdown-content">
+                        <a href="/html/health_tips.html" class="block px-4 py-2 text-gray-600 hover:text-blue-600">Health Tips</a></li>
+                        <a href="/html/industry_news.html" class="block px-4 py-2 text-gray-600 hover:text-blue-600">Industry News</a></li>
+                    </div>
+                </div>
+                <li><a href="/html/contact_us.html" class="text-gray-600 hover:text-blue-600">Contact</a></li>
+                <li><a href="/html/sigin.html" class="text-gray-600 hover:text-blue-600">Sign In</a></li>
+                <li><a href="/html/signup.html" class="text-white bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-lg">Sign Up</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Mini Hero Section -->
+    <section class="bg-cover bg-center h-40 text-white flex items-center justify-center relative" style="background-image: url('/img/service-3.jpg');">
+        <div class="absolute inset-0 bg-blue-900 opacity-50"></div>
+        <div class="relative z-10">
+            <h2 class="text-2xl font-bold">Service | Telemedicine</h2>
+        </div>
+    </section>
+
+    <!-- Telemedicine Content -->
+    <div class="container bg-red-100 mx-auto px-4 py-8  my-8">
+        <div class="text-center mb-8">
+            <h1 class="text-3xl font-bold mb-4">Get Urgent Medical Attention Online</h1>
+            <p class="text-gray-700 leading-relaxed">Connect with our doctors through video or voice calls for urgent medical consultations from the comfort of your home.</p>
+        </div>
+
+        <div class="max-w-lg mx-auto bg-white p-6 rounded-lg shadow-lg">
+            <form>
+                <div class="mb-4">
+                    <label for="full-name" class="block text-gray-700">Full Name</label>
+                    <input type="text" id="full-name" class="form-input w-full px-4 py-2 border rounded-lg shadow-sm" placeholder="Israel Ayinde" required>
+                </div>
+                <div class="mb-4">
+                    <label for="email" class="block text-gray-700">Email</label>
+                    <input type="email" id="email" class="form-input w-full px-4 py-2 border rounded-lg shadow-sm" placeholder="israel.ayinde@example.com" required>
+                </div>
+                <div class="mb-4">
+                    <label for="phone" class="block text-gray-700">Phone Number</label>
+                    <input type="tel" id="phone" class="form-input w-full px-4 py-2 border rounded-lg shadow-sm" placeholder="123-456-7890" required>
+                </div>
+                <div class="mb-4">
+                    <label for="contact-method" class="block text-gray-700">Preferred Contact Method</label>
+                    <select id="contact-method" class="form-select w-full px-4 py-2 border rounded-lg shadow-sm" required>
+                        <option value="" disabled selected>Select a method</option>
+                        <option value="video-call">Video Call</option>
+                        <option value="voice-call">Voice Call</option>
+                    </select>
+                </div>
+                <div class="mb-4">
+                    <label for="doctor" class="block text-gray-700">Select Doctor</label>
+                    <select id="doctor" class="form-select w-full px-4 py-2 border rounded-lg shadow-sm" required>
+                        <option value="" disabled selected>Select a doctor</option>
+                        <option value="dr-jane-doe">Dr. Israel Ayinde</option>
+                        <option value="dr-john-smith">Dr. Ayinde Victor</option>
+                        <option value="dr-emily-jones">Dr. Israel Victor</option>
+                    </select>   
+                </div>
+                <div class="flex items-center justify-between">
+                    <div class="flex justify-center space-x-4">
+                        <a href="/html/waiting_room.html" class="bg-blue-600 text-white font-semibold py-3 px-6 rounded-lg shadow-lg">Start Consultation</a>
+                    </div>
+                    <a href="/index.html" class="text-blue-600 hover:underline">Cancel</a>
+                </div>
+            </form>
+        </div>
+
+        <!-- Call to Action Section -->
+        <div class="mt-16 text-center">
+            <h2 class="text-2xl font-bold mb-4">Learn More from Our Blog</h2>
+            <p class="text-gray-700 leading-relaxed mb-4">Read our latest articles on health tips, medical advice, and more. Stay informed and take charge of your health.</p>
+            <a href="blog.html" class="bg-blue-600 text-white font-semibold py-2 px-4 rounded-lg shadow-lg">Visit Our Blog</a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-gray-400 py-8">
+        <div class="container mx-auto px-4 items-center w-4/5">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-lg font-bold text-white">HealthSched</h3>
+                    <p class="mt-2 text-gray-400">Efficient Healthcare Appointment Scheduling</p>
+                </div>
+                <div>
+                    <h4 class="text-md font-bold text-white">Quick Links</h4>
+                    <ul class="mt-2 space-y-2">
+                        <li><a href="index.html" class="hover:text-white">Home</a></li>
+                        <li><a href="/html/service.html" class="hover:text-white">Services</a></li>
+                        <li><a href="/html/health_tips.html" class="hover:text-white">Blog</a></li>
+                        <li><a href="/html/aboutus.html" class="hover:text-white">About Us</a></li>
+                        <li><a href="/html/contact_us.html" class="hover:text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-md font-bold text-white">Subscribe</h4>
+                    <form action="#" class="mt-2">
+                        <input type="email" placeholder="Enter your email" class="w-full p-2 border rounded-lg">
+                        <button type="submit" class="mt-2 bg-blue-600 text-white px-4 py-2 rounded-lg">Subscribe</button>
+                    </form>
+                </div>
+                <div>
+                    <h4 class="text-md font-bold text-white">Follow Us</h4>
+                    <ul class="mt-2 flex space-x-4">
+                        <li><a href="#" class="hover:text-white"><i class="fab fa-facebook-f"></i> Facebook</a></li>
+                        <li><a href="#" class="hover:text-white"><i class="fab fa-twitter"></i> Twitter</a></li>
+                        <li><a href="#" class="hover:text-white"><i class="fab fa-linkedin-in"></i> LinkedIn</a></li>
+                        <li><a href="#" class="hover:text-white"><i class="fab fa-instagram"></i> Instagram</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mt-8 text-center">
+                <p>&copy; 2024 HealthSched. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
