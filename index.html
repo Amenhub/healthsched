@@ -6,62 +6,89 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Healthcare Appointment Scheduling</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css" rel="stylesheet">
 </head>
 
 <body class="bg-gray-50">
     <!-- Navbar -->
-    <nav class="bg-white shadow-lg h-20">
-        <div class="container mx-auto px-4 py-2 flex justify-between items-center h-full w-4/5">
+    <nav class="bg-white shadow-lg">
+        <div class="container mx-auto px-4 py-2 flex justify-between items-center h-full">
             <a href="index.html" class="flex items-center">
-                <img src="/img/logo.png" alt="HealthSched Logo" class="h-14">
+                <img src="assets/img/logo.png" alt="HealthSched Logo" class="h-14">
             </a>
-            <ul class="flex space-x-4 items-center">
+            <button id="menu-button" class="lg:hidden flex flex-col ml-4">
+                <span class="w-6 h-1 bg-gray-800 dark:bg-white mb-1"> 
+                </span>
+                <span class="w-6 h-1 bg-gray-800 dark:bg-white mb-1">
+                </span>
+                <span class="w-6 h-1 bg-gray-800 dark:bg-white mb-1">
+                </span>
+            </button>
+            <ul id="menu" class="hidden lg:flex space-x-4 items-center">
                 <li><a href="index.html" class="text-gray-600 hover:text-blue-600">Home</a></li>
                 <li><a href="html/aboutus.html" class="text-gray-600 hover:text-blue-600">About Us</a></li>
                 <div class="dropdown">
                     <button class="dropbtn">Services</button>
                     <div class="dropdown-content">
-                        <a href="/html/realtimebooking.html" class="block px-4 py-2 text-gray-600 hover:text-blue-600">Real-Time Booking</a>
-                        <a href="/html/telemedicine.html" class="block px-4 py-2 text-gray-600 hover:text-blue-600">Telemedicine</a>
-                        <a href="/html/health_resource.html" class="block px-4 py-2 text-gray-600 hover:text-blue-600">Health Resources</a>
+                        <a href="html/realtimebooking.html"
+                            class="block px-4 py-2 text-gray-600 hover:text-blue-600">Real-Time Booking</a>
+                        <a href="html/telemedicine.html"
+                            class="block px-4 py-2 text-gray-600 hover:text-blue-600">Telemedicine</a>
+                        <a href="html/health_resource.html"
+                            class="block px-4 py-2 text-gray-600 hover:text-blue-600">Health Resources</a>
                     </div>
                 </div>
                 <div class="dropdown">
                     <button class="dropbtn">Blog</button>
                     <div class="dropdown-content">
-                        <a href="/html/health_tips.html" class="block px-4 py-2 text-gray-600 hover:text-blue-600">Health Tips</a></li>
-                        <a href="/html/industry_news.html" class="block px-4 py-2 text-gray-600 hover:text-blue-600">Industry News</a></li>
+                        <a href="html/health_tips.html" class="block px-4 py-2 text-gray-600 hover:text-blue-600">Health
+                            Tips</a></li>
+                        <a href="html/industry_news.html"
+                            class="block px-4 py-2 text-gray-600 hover:text-blue-600">Industry News</a></li>
                     </div>
                 </div>
-                <li><a href="/html/contact_us.html" class="text-gray-600 hover:text-blue-600">Contact Us</a></li>
+                <li><a href="html/contact_us.html" class="text-gray-600 hover:text-blue-600">Contact Us</a></li>
                 <li><a href="html/sigin.html" class="text-gray-600 hover:text-blue-600">Sign In</a></li>
-                <li><a href="html/signup.html" class="text-white bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-lg">Sign Up</a></li>
+                <li><a href="html/signup.html"
+                        class="text-white bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-lg">Sign Up</a></li>
             </ul>
+            </div>
         </div>
     </nav>
 
     <!-- Hero Banner -->
-    <div class="hero flex items-center justify-center">
-        <div class="hero-content text-center text-white w-4/5">
-            <h1 class="text-4xl font-bold mb-2">Efficient Healthcare Appointment Scheduling</h1>
-            <p class="mb-4">Movement towards improving healthcare delivery with digital technology.</p>
-            <div class="mt-6 space-x-4">
-                <a href="html/sigin.html" class="bg-white text-red-600 font-semibold py-3 px-6 rounded-lg shadow-lg">Get Started</a>
-                <a href="/html/realtimebooking.html" class="bg-blue-600 text-white font-semibold py-3 px-6 rounded-lg shadow-lg">Book an Appointment</a>
+    <div class="relative bg-gradient-to-r from-purple-600 to-blue-600 h-screen text-white overflow-hidden">
+        <div class="absolute inset-0">
+            <img src="https://sp-ao.shortpixel.ai/client/to_auto,q_glossy,ret_img,w_612/https://www.virtualdoctors.ng/vmedia/2023/08/18-jpg.webp"
+                alt="Background Image" class="object-cover object-center w-full h-full" />
+            <div class="absolute inset-0 bg-black opacity-50"></div>
+        </div>
+        <div class="relative z-10 flex flex-col justify-center items-center h-full text-center">
+            <h1 class="text-4xl font-bold leading-tight mb-2">Efficient Healthcare Appointment Scheduling</h1>
+            <p class="text-lg text-gray-300 mb-4">Movement towards improving healthcare delivery with digital technology
+            </p>
+            <div class=" mt-2 space-x-4">
+                <a href="html/sigin.html" class="bg-white text-red-600 font-semibold py-3 px-6 rounded-lg shadow-lg">Get
+                    Started</a>
+                <a href="html/realtimebooking.html"
+                    class="bg-blue-600 text-white font-semibold py-3 px-6 rounded-lg shadow-lg">schedule</a>
             </div>
         </div>
     </div>
 
-       <!-- Overview Section -->
-    <section class="container mx-auto px-4 py-10 flex justify-between items-center w-4/5 my-7">
-        <div class="flex flex-col md:flex-row items-center md:space-x-8">
+    <!-- Overview Section -->
+    <section class="container mx-auto px-4 py-10 flex justify-between items-center w-4/5 my-3">
+        <div class="flex flex-col md:flex-row items-center md:space-x-4">
             <div class="flex-1 mb-6 md:mb-0">
-                <img src="img/overview.jpg" alt="Overview" class="w-full rounded-lg shadow-lg">
+                <img src="assets/img/overview.jpg" alt="Overview" class="w-full rounded-lg shadow-lg">
             </div>
             <div class="flex-1">
                 <h2 class="text-3xl font-bold text-gray-800">Welcome to HealthSched</h2>
-                <p class="mt-4 text-gray-600">HealthSched is dedicated to making healthcare appointment scheduling efficient and hassle-free. Our comprehensive online application integrates real-time booking, automated reminders, telemedicine services, and AI automation to enhance healthcare delivery and maximize resource usage. Whether you are in a rural or urban area, HealthSched ensures you have access to quality healthcare services at your convenience.</p>
+                <p class="mt-4 text-gray-600">HealthSched is dedicated to making healthcare appointment scheduling
+                    efficient and hassle-free. Our comprehensive online application integrates real-time booking,
+                    automated reminders, telemedicine services, and AI automation to enhance healthcare delivery and
+                    maximize resource usage. Whether you are in a rural or urban area, HealthSched ensures you have
+                    access to quality healthcare services at your convenience.</p>
             </div>
         </div>
     </section>
@@ -73,58 +100,79 @@
             <div class="mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 bg-gray-100">
                 <!-- Service 1 -->
                 <div class="bg-white rounded-lg shadow-lg p-6">
-                    <img src="img/service-1.jpg" alt="Real-Time Booking" class="w-full h-60 object-cover rounded-md mx-auto">
+                    <img src="assets/img/service-1.jpg" alt="Real-Time Booking"
+                        class="w-full h-60 object-cover rounded-md mx-auto">
                     <h3 class="text-2xl font-semibold text-blue-600 mt-4 text-center">Real-Time Booking</h3>
-                    <p class="mt-4 content-center text-gray-600 text-center">Book appointments with ease and get instant confirmation. Enjoy the convenience of real-time booking and avoid the hassle of long waits.</p>
+                    <p class="mt-4 content-center text-gray-600 text-center">Book appointments with ease and get instant
+                        confirmation. Enjoy the convenience of real-time booking and avoid the hassle of long waits.</p>
                     <div class="mt-4 flex justify-center">
-                        <a href="/html/realtimebooking.html" class="bg-blue-600 text-white font-semibold py-2 px-4 rounded-lg">Learn More</a>
+                        <a href="html/realtimebooking.html"
+                            class="bg-blue-600 text-white font-semibold py-2 px-4 rounded-lg">Learn More</a>
                     </div>
                 </div>
                 <!-- Service 2 -->
                 <div class="bg-white rounded-lg shadow-lg p-6">
-                    <img src="img/service-2.jpg" alt="Automated Reminders" class="w-full h-60 object-cover rounded-md">
+                    <img src="assets/img/service-2.jpg" alt="Automated Reminders"
+                        class="w-full h-60 object-cover rounded-md">
                     <h3 class="text-2xl font-semibold text-blue-600 mt-4 text-center">Automated Reminders</h3>
-                    <p class="mt-4 text-gray-600 text-center">Never miss an appointment with our automated reminders. Stay on top of your healthcare schedule with timely notifications and reminders sent directly to your phone or email.</p>
+                    <p class="mt-4 text-gray-600 text-center">Never miss an appointment with our automated reminders.
+                        Stay on top of your healthcare schedule with timely notifications and reminders sent directly to
+                        your phone or email.</p>
                     <div class="mt-4 flex justify-center">
-                        <a href="/html/realtimebooking.html" class="bg-blue-600 text-white font-semibold py-2 px-4 rounded-lg">Learn More</a>
+                        <a href="html/realtimebooking.html"
+                            class="bg-blue-600 text-white font-semibold py-2 px-4 rounded-lg">Learn More</a>
                     </div>
                 </div>
                 <!-- Service 3 -->
                 <div class="bg-white rounded-lg shadow-lg p-6">
-                    <img src="img/service-3.jpg" alt="Telemedicine" class="w-full h-60 object-cover rounded-md">
+                    <img src="assets/img/service-3.jpg" alt="Telemedicine" class="w-full h-60 object-cover rounded-md">
                     <h3 class="text-2xl font-semibold text-blue-600 mt-4 text-center">Telemedicine</h3>
-                    <p class="mt-4 text-gray-600 text-center">Consult with healthcare providers from the comfort of your home. Our telemedicine services allow you to receive medical advice, prescriptions, and follow-ups without visiting the clinic.</p>
+                    <p class="mt-4 text-gray-600 text-center">Consult with healthcare providers from the comfort of your
+                        home. Our telemedicine services allow you to receive medical advice, prescriptions, and
+                        follow-ups without visiting the clinic.</p>
                     <div class="mt-4 flex justify-center">
-                        <a href="/html/telemedicine.html" class="bg-blue-600 text-white font-semibold py-2 px-4 rounded-lg">Learn More</a>
+                        <a href="html/telemedicine.html"
+                            class="bg-blue-600 text-white font-semibold py-2 px-4 rounded-lg">Learn More</a>
                     </div>
                 </div>
                 <!-- Service 4 -->
                 <div class="bg-white rounded-lg shadow-lg p-6">
-                    <img src="img/service-4.jpg" alt="AI Automation" class="w-full h-60 object-cover rounded-md">
+                    <img src="assets/img/service-4.jpg" alt="AI Automation" class="w-full h-60 object-cover rounded-md">
                     <h3 class="text-2xl font-semibold text-blue-600 mt-4 text-center">AI Automation</h3>
-                    <p class="mt-4 text-gray-600 text-center">Leverage AI for enhanced healthcare service delivery. Our AI automation ensures efficient and accurate management of your healthcare needs.</p>
+                    <p class="mt-4 text-gray-600 text-center">Leverage AI for enhanced healthcare service delivery. Our
+                        AI automation ensures efficient and accurate management of your healthcare needs.</p>
                     <div class="mt-4 flex justify-center">
-                        <a href="/index.html" class="bg-blue-600 text-white font-semibold py-2 px-4 rounded-lg">Learn More</a>
+                        <a href="index.html" class="bg-blue-600 text-white font-semibold py-2 px-4 rounded-lg">Learn
+                            More</a>
                     </div>
                 </div>
                 <!-- Service 5 -->
                 <div class="bg-white rounded-lg shadow-lg p-6">
-                    <img src="img/service-5.jpg" alt="Health Resources" class="w-full h-60 object-cover rounded-md">
+                    <img src="assets/img/service-5.jpg" alt="Health Resources"
+                        class="w-full h-60 object-cover rounded-md">
                     <h3 class="text-2xl font-semibold text-blue-600 mt-4 text-center">Health Resources</h3>
-                    <p class="mt-4 text-gray-600 text-center">Access a wealth of health resources to stay informed and proactive about your health. Our platform offers valuable information to support your wellness journey.</p>
+                    <p class="mt-4 text-gray-600 text-center">Access a wealth of health resources to stay informed and
+                        proactive about your health. Our platform offers valuable information to support your wellness
+                        journey.</p>
                     <div class="mt-4 flex justify-center">
-                        <a href="/html/health_resource.html" class="bg-blue-600 text-white font-semibold py-2 px-4 rounded-lg">Learn More</a>
+                        <a href="html/health_resource.html"
+                            class="bg-blue-600 text-white font-semibold py-2 px-4 rounded-lg">Learn More</a>
                     </div>
                 </div>
                 <!-- Service 6 -->
                 <div class="bg-white rounded-lg shadow-lg p-6">
-                    <img src="img/service-6.jpg" alt="Patient Portal" class="w-full h-60 object-cover rounded-md">
+                    <img src="assets/img/service-6.jpg" alt="Patient Portal"
+                        class="w-full h-60 object-cover rounded-md">
                     <h3 class="text-2xl font-semibold text-blue-600 mt-4 text-center">Patient Portal</h3>
-                    <p class="mt-4 text-gray-600 text text-center">Manage your appointments, health records, and communications with healthcare providers through our secure and user-friendly patient portal.</p>
+                    <p class="mt-4 text-gray-600 text text-center">Manage your appointments, health records, and
+                        communications with healthcare providers through our secure and user-friendly patient portal.
+                    </p>
                     <div class="mt-4 flex justify-center">
-                        <a href="/html/sigin.html" class="bg-blue-600 text-white font-semibold py-2 px-4 rounded-lg">Learn More</a>
+                        <a href="html/sigin.html"
+                            class="bg-blue-600 text-white font-semibold py-2 px-4 rounded-lg">Learn More</a>
                     </div>
                 </div>
+                +-
             </div>
         </section>
         <!--why choose us-->
@@ -133,15 +181,20 @@
                 <h2 class="text-3xl font-bold text-gray-800 text-center">Why Choose Us</h2>
                 <div class="flex flex-col md:flex-row items-center mt-8 md:space-x-8">
                     <div class="flex-1 mb-6 md:mb-0">
-                        <img src="img/whychooseus.jpg" alt="Why Choose Us" class="w-full rounded-lg shadow-lg">
+                        <img src="assets/img/whychooseus.jpg" alt="Why Choose Us" class="w-full rounded-lg shadow-lg">
                     </div>
                     <div class="flex-1">
                         <h3 class="text-2xl font-semibold text-gray-800">Reliable and Convenient</h3>
-                        <p class="mt-4 text-gray-600">Our platform is designed to be user-friendly, providing you with a seamless experience. Book appointments, access health resources, and consult with healthcare providers all in one place.</p>
+                        <p class="mt-4 text-gray-600">Our platform is designed to be user-friendly, providing you with a
+                            seamless experience. Book appointments, access health resources, and consult with healthcare
+                            providers all in one place.</p>
                         <h3 class="text-2xl font-semibold text-gray-800 mt-6">Advanced Technology</h3>
-                        <p class="mt-4 text-gray-600">Utilize our AI-driven automation and telemedicine services to receive personalized health insights and care. Our advanced technology ensures you get the best healthcare experience.</p>
+                        <p class="mt-4 text-gray-600">Utilize our AI-driven automation and telemedicine services to
+                            receive personalized health insights and care. Our advanced technology ensures you get the
+                            best healthcare experience.</p>
                         <h3 class="text-2xl font-semibold text-gray-800 mt-6">Comprehensive Health Solutions</h3>
-                        <p class="mt-4 text-gray-600">From booking appointments to accessing valuable health resources, HealthSched offers a comprehensive solution to manage your healthcare effectively.</p>
+                        <p class="mt-4 text-gray-600">From booking appointments to accessing valuable health resources,
+                            HealthSched offers a comprehensive solution to manage your healthcare effectively.</p>
                     </div>
                 </div>
             </div>
@@ -155,7 +208,8 @@
             <button onclick="" class="text-gray-600 hover:text-blue-600">-</button>
         </div>
         <div class="mt-2">
-            <input type="text" id="ai-question" class="w-full p-2 border rounded-lg" placeholder="Type your question...">
+            <input type="text" id="ai-question" class="w-full p-2 border rounded-lg"
+                placeholder="Type your question...">
             <button onclick="" class="mt-2 bg-blue-600 text-white px-4 py-2 rounded-lg">Submit</button>
         </div>
         <div class="mt-4 text-gray-600"></div>
@@ -173,17 +227,18 @@
                     <h4 class="text-md font-bold text-white">Quick Links</h4>
                     <ul class="mt-2 space-y-2">
                         <li><a href="index.html" class="hover:text-white">Home</a></li>
-                        <li><a href="/html/service.html" class="hover:text-white">Services</a></li>
-                        <li><a href="/html/health_tips.html" class="hover:text-white">Blog</a></li>
-                        <li><a href="/html/aboutus.html" class="hover:text-white">About Us</a></li>
-                        <li><a href="/html/contact_us.html" class="hover:text-white">Contact</a></li>
+                        <li><a href="html/realtimebooking.html" class="hover:text-white">Services</a></li>
+                        <li><a href="html/health_tips.html" class="hover:text-white">Blog</a></li>
+                        <li><a href="html/aboutus.html" class="hover:text-white">About Us</a></li>
+                        <li><a href="html/contact_us.html" class="hover:text-white">Contact</a></li>
                     </ul>
                 </div>
                 <div>
                     <h4 class="text-md font-bold text-white">Subscribe</h4>
                     <form action="#" class="mt-2">
                         <input type="email" placeholder="Enter your email" class="w-full p-2 border rounded-lg">
-                        <button type="submit" class="mt-2 bg-blue-600 text-white px-4 py-2 rounded-lg">Subscribe</button>
+                        <button type="submit"
+                            class="mt-2 bg-blue-600 text-white px-4 py-2 rounded-lg">Subscribe</button>
                     </form>
                 </div>
                 <div>

@@ -6,42 +6,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Telemedicine | HealthSched</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 
 <body class="bg-gray-50">
     <!-- Navbar -->
     <nav class="bg-white shadow-lg h-20">
-        <div class="container mx-auto px-4 py-2 flex justify-between items-center h-full w-4/5">
-            <a href="/index.html" class="flex items-center">
-                <img src="/img/logo.png" alt="HealthSched Logo" class="h-14">
+        <div class="container mx-auto px-4 py-2 flex justify-between items-center h-full">
+            <a href="../index.html" class="flex items-center">
+                <img src="../assets/img/logo.png" alt="HealthSched Logo" class="h-14">
             </a>
-            <ul class="flex space-x-4 items-center">
-                <li><a href="/index.html" class="text-gray-600 hover:text-blue-600">Home</a></li>
-                <li><a href="/html/aboutus.html" class="text-gray-600 hover:text-blue-600">About Us</a></li>
+            <button id="menu-button" class="lg:hidden flex flex-col ml-4">
+                <span class="w-6 h-1 bg-gray-800 dark:bg-white mb-1"> 
+                </span>
+                <span class="w-6 h-1 bg-gray-800 dark:bg-white mb-1">
+                </span>
+                <span class="w-6 h-1 bg-gray-800 dark:bg-white mb-1">
+                </span>
+            </button>
+            <ul id="menu" class="hidden lg:flex space-x-4 items-center">
+                <li><a href="../index.html" class="text-gray-600 hover:text-blue-600">Home</a></li>
+                <li><a href="../html/aboutus.html" class="text-gray-600 hover:text-blue-600">About Us</a></li>
                 <div class="dropdown">
                     <button class="dropbtn">Services</button>
                     <div class="dropdown-content">
-                        <a href="/html/realtimebooking.html" class="block px-4 py-2 text-gray-600 hover:text-blue-600">Real-Time Booking</a>
-                        <a href="/html/telemedicine.html" class="block px-4 py-2 text-gray-600 hover:text-blue-600">Telemedicine</a>
-                        <a href="/html/health_resource.html" class="block px-4 py-2 text-gray-600 hover:text-blue-600">Health Resources</a>
+                        <a href="../html/realtimebooking.html" class="block px-4 py-2 text-gray-600 hover:text-blue-600">Real-Time Booking</a>
+                        <a href="../html/telemedicine.html" class="block px-4 py-2 text-gray-600 hover:text-blue-600">Telemedicine</a>
+                        <a href="../html/health_resource.html" class="block px-4 py-2 text-gray-600 hover:text-blue-600">Health Resources</a>
                     </div>
                 </div>
                 <div class="dropdown">
                     <button class="dropbtn">Blog</button>
                     <div class="dropdown-content">
-                        <a href="/html/health_tips.html" class="block px-4 py-2 text-gray-600 hover:text-blue-600">Health Tips</a></li>
-                        <a href="/html/industry_news.html" class="block px-4 py-2 text-gray-600 hover:text-blue-600">Industry News</a></li>
+                        <a href="../html/health_tips.html" class="block px-4 py-2 text-gray-600 hover:text-blue-600">Health Tips</a></li>
+                        <a href="../html/industry_news.html" class="block px-4 py-2 text-gray-600 hover:text-blue-600">Industry News</a></li>
                     </div>
                 </div>
-                <li><a href="/html/contact_us.html" class="text-gray-600 hover:text-blue-600">Contact</a></li>
-                <li><a href="/html/sigin.html" class="text-gray-600 hover:text-blue-600">Sign In</a></li>
-                <li><a href="/html/signup.html" class="text-white bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-lg">Sign Up</a></li>
+                <li><a href="../html/contact_us.html" class="text-gray-600 hover:text-blue-600">Contact</a></li>
+                <li><a href="../html/sigin.html" class="text-gray-600 hover:text-blue-600">Sign In</a></li>
+                <li><a href="../html/signup.html" class="text-white bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-lg">Sign Up</a></li>
             </ul>
         </div>
     </nav>
     <!-- Mini Hero Section -->
-    <section class="bg-cover bg-center h-40 text-white flex items-center justify-center relative" style="background-image: url('/img/service-3.jpg');">
+    <section class="bg-cover bg-center h-40 text-white flex items-center justify-center relative" style="background-image: url('../assets/img/service-3.jpg');">
         <div class="absolute inset-0 bg-blue-900 opacity-50"></div>
         <div class="relative z-10">
             <h2 class="text-2xl font-bold">Service | Telemedicine</h2>
@@ -88,9 +96,9 @@
                 </div>
                 <div class="flex items-center justify-between">
                     <div class="flex justify-center space-x-4">
-                        <a href="/html/waiting_room.html" class="bg-blue-600 text-white font-semibold py-3 px-6 rounded-lg shadow-lg">Start Consultation</a>
+                        <a href="../html/waiting_room.html" class="bg-blue-600 text-white font-semibold py-3 px-6 rounded-lg shadow-lg">Start Consultation</a>
                     </div>
-                    <a href="/index.html" class="text-blue-600 hover:underline">Cancel</a>
+                    <a href="../index.html" class="text-blue-600 hover:underline">Cancel</a>
                 </div>
             </form>
         </div>
@@ -99,7 +107,7 @@
         <div class="mt-16 text-center">
             <h2 class="text-2xl font-bold mb-4">Learn More from Our Blog</h2>
             <p class="text-gray-700 leading-relaxed mb-4">Read our latest articles on health tips, medical advice, and more. Stay informed and take charge of your health.</p>
-            <a href="blog.html" class="bg-blue-600 text-white font-semibold py-2 px-4 rounded-lg shadow-lg">Visit Our Blog</a>
+            <a href="../html/health_tips.html" class="bg-blue-600 text-white font-semibold py-2 px-4 rounded-lg shadow-lg">Visit Our Blog</a>
         </div>
     </div>
 
@@ -114,11 +122,11 @@
                 <div>
                     <h4 class="text-md font-bold text-white">Quick Links</h4>
                     <ul class="mt-2 space-y-2">
-                        <li><a href="index.html" class="hover:text-white">Home</a></li>
-                        <li><a href="/html/service.html" class="hover:text-white">Services</a></li>
-                        <li><a href="/html/health_tips.html" class="hover:text-white">Blog</a></li>
-                        <li><a href="/html/aboutus.html" class="hover:text-white">About Us</a></li>
-                        <li><a href="/html/contact_us.html" class="hover:text-white">Contact</a></li>
+                        <li><a href="../index.html" class="hover:text-white">Home</a></li>
+                        <li><a href="../html/telemedicine.html" class="hover:text-white">Services</a></li>
+                        <li><a href="../html/health_tips.html" class="hover:text-white">Blog</a></li>
+                        <li><a href="../html/aboutus.html" class="hover:text-white">About Us</a></li>
+                        <li><a href="../html/contact_us.html" class="hover:text-white">Contact</a></li>
                     </ul>
                 </div>
                 <div>

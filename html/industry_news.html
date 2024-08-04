@@ -6,43 +6,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Industry News - HealthSched Blog</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 
 <body class="bg-gray-50" >
     <!-- Navbar -->
     <nav class="bg-white shadow-lg h-20">
-        <div class="container mx-auto px-4 py-2 flex justify-between items-center h-full w-4/5">
-            <a href="/index.html" class="flex items-center">
-                <img src="/img/logo.png" alt="HealthSched Logo" class="h-14">
+        <div class="container mx-auto px-4 py-2 flex justify-between items-center h-full">
+            <a href="../index.html" class="flex items-center">
+                <img src="../assets/img/logo.png" alt="HealthSched Logo" class="h-14">
             </a>
-            <ul class="flex space-x-4 items-center">
-                <li><a href="/index.html" class="text-gray-600 hover:text-blue-600">Home</a></li>
-                <li><a href="html/aboutus.html" class="text-gray-600 hover:text-blue-600">About Us</a></li>
+            <button id="menu-button" class="lg:hidden flex flex-col ml-4">
+                <span class="w-6 h-1 bg-gray-800 dark:bg-white mb-1"> 
+                </span>
+                <span class="w-6 h-1 bg-gray-800 dark:bg-white mb-1">
+                </span>
+                <span class="w-6 h-1 bg-gray-800 dark:bg-white mb-1">
+                </span>
+            </button>
+            <ul id="menu" class="hidden lg:flex space-x-4 items-center">
+                <li><a href="../index.html" class="text-gray-600 hover:text-blue-600">Home</a></li>
+                <li><a href="../html/aboutus.html" class="text-gray-600 hover:text-blue-600">About Us</a></li>
                 <div class="dropdown">
                     <button class="dropbtn">Services</button>
                     <div class="dropdown-content">
-                        <a href="/html/realtimebooking.html" class="block px-4 py-2 text-gray-600 hover:text-blue-600">Real-Time Booking</a>
-                        <a href="/html/telemedicine.html" class="block px-4 py-2 text-gray-600 hover:text-blue-600">Telemedicine</a>
-                        <a href="/html/health_resource.html" class="block px-4 py-2 text-gray-600 hover:text-blue-600">Health Resources</a>
+                        <a href="../html/realtimebooking.html" class="block px-4 py-2 text-gray-600 hover:text-blue-600">Real-Time Booking</a>
+                        <a href="../html/telemedicine.html" class="block px-4 py-2 text-gray-600 hover:text-blue-600">Telemedicine</a>
+                        <a href="../html/health_resource.html" class="block px-4 py-2 text-gray-600 hover:text-blue-600">Health Resources</a>
                     </div>
                 </div>
                 <div class="dropdown">
                     <button class="dropbtn">Blog</button>
                     <div class="dropdown-content">
-                        <a href="/html/health_tips.html" class="block px-4 py-2 text-gray-600 hover:text-blue-600">Health Tips</a></li>
-                        <a href="/html/industry_news.html" class="block px-4 py-2 text-gray-600 hover:text-blue-600">Industry News</a></li>
+                        <a href="../html/health_tips.html" class="block px-4 py-2 text-gray-600 hover:text-blue-600">Health Tips</a></li>
+                        <a href="../html/industry_news.html" class="block px-4 py-2 text-gray-600 hover:text-blue-600">Industry News</a></li>
                     </div>
                 </div>
-                <li><a href="/html/blog.html" class="text-gray-600 hover:text-blue-600">Contact</a></li>
-                <li><a href="/html/sigin.html" class="text-gray-600 hover:text-blue-600">Sign In</a></li>
-                <li><a href="/html/signup.html" class="text-white bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-lg">Sign Up</a></li>
+                <li><a href="../html/blog.html" class="text-gray-600 hover:text-blue-600">Contact</a></li>
+                <li><a href="../html/sigin.html" class="text-gray-600 hover:text-blue-600">Sign In</a></li>
+                <li><a href="../html/signup.html" class="text-white bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-lg">Sign Up</a></li>
             </ul>
         </div>
     </nav>
 
     <!-- Mini Hero Section -->
-    <section class="bg-cover bg-center h-40 text-white flex items-center justify-center relative" style="background-image: url('/img/health_industry_hero.jfif');">
+    <section class="bg-cover bg-center h-40 text-white flex items-center justify-center relative" style="background-image: url('../assets/img/health_industry_hero.jfif');">
         <div class="absolute inset-0 bg-blue-900 opacity-50"></div>
         <div class="relative z-10">
             <h2 class="text-2xl font-bold ">Blog | Industry News</h2>
@@ -102,7 +110,7 @@
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <!-- WHO -->
                 <div class="bg-white rounded-lg shadow-lg overflow-hidden">
-                    <img src="/img/health_industry_1.jpg" alt="WHO logo" class="w-full h-60 object-cover">
+                    <img src="../assets/img/health_industry_1.jpg" alt="WHO logo" class="w-full h-60 object-cover">
                     <div class="p-6">
                         <h3 class="text-xl font-bold text-gray-800 mb-2 text-center">World Health Organization (WHO)</h3>
                         <p class="text-gray-700 mb-4 text-center">Get the latest updates on global health issues, guidelines, and reports from WHO.</p>
@@ -113,18 +121,18 @@
             </div>
             <!-- CDC -->
             <div class="bg-white rounded-lg shadow-lg overflow-hidden">
-                <img src="/img/health_industry_2" alt="CDC logo" class="w-full h-60 object-cover">
+                <img src="../assets/img/health_industry_2" alt="CDC logo" class="w-full h-60 object-cover">
                 <div class="p-6">
                     <h3 class="text-xl font-bold text-gray-800 mb-2 text-center">Centers for Disease Control and Prevention</h3>
                     <p class="text-gray-700 mb-4 text-center">Stay informed about public health issues and updates from CDC.</p>
                     <div class="mt-4 flex justify-center">
-                        <a href="https://www.cdc.gov" class="bg-blue-600 text-white font-semibold py-2 px-4 rounded-lg">Visit CDC</a>
+                        <a href="https://www.cdc.gov/media/" class="bg-blue-600 text-white font-semibold py-2 px-4 rounded-lg">Visit CDC</a>
                     </div>
                 </div>
             </div>
             <!-- NIH -->
             <div class="bg-white rounded-lg shadow-lg overflow-hidden">
-                <img src="/img/health_industry_3.jfif" alt="NIH logo" class="w-full h-60 object-cover">
+                <img src="../assets/img/health_industry_3.jfif" alt="NIH logo" class="w-full h-60 object-cover">
                 <div class="p-6">
                     <h3 class="text-xl font-bold text-gray-800 mb-2 text-center">National Institutes of Health</h3>
                     <p class="text-gray-700 mb-4 text-center">Explore research and health information from NIH</p>
@@ -135,7 +143,7 @@
             </div>
             <!-- Mayo Clinic -->
             <div class="bg-white rounded-lg shadow-lg overflow-hidden">
-                <img src="/img/health_industry_4.jpg" alt="Health Industry 4" class="w-full h-60 object-cover">
+                <img src="../assets/img/health_industry_4.jpg" alt="Health Industry 4" class="w-full h-60 object-cover">
                 <div class="p-6">
                     <h3 class="text-xl font-bold text-gray-800 mb-2 text-center">Mayo Clinic</h3>
                     <p class="text-gray-700 mb-4 text-center">Access expert medical advice and health information from Mayo Clinic..</p>
@@ -146,7 +154,7 @@
             </div>
             <!-- Nigerian Red Cross Society -->
             <div class="bg-white rounded-lg shadow-lg overflow-hidden">
-                <img src="/img/health_industry_5.jpg" alt="Health industry 5" class="w-full h-60 object-cover">
+                <img src="../assets/img/health_industry_5.jpg" alt="Health industry 5" class="w-full h-60 object-cover">
                 <div class="p-6">
                     <h3 class="text-xl font-bold text-gray-800 mb-2 text-center">Nigerian Red Cross Society</h3>
                     <p class="text-gray-700 mb-4 text-center">Stay updated with the latest health news and research from Nigeria Red Cross Society.</p>
@@ -157,7 +165,7 @@
             </div>
             <!-- Nigeria Society of Physiotherapy. -->
             <div class="bg-white rounded-lg shadow-lg overflow-hidden">
-                <img src="/img/health_industry_6.jpg" alt="Health Tip 6" class="w-full h-60 object-cover">
+                <img src="../assets/img/health_industry_6.jpg" alt="Health Tip 6" class="w-full h-60 object-cover">
                 <div class="p-6">
                     <h3 class="text-xl font-bold text-gray-800 mb-2 text-center">Nigeria Society of Physiotherapy</h3>
                     <p class="text-gray-700 mb-4 text-center">Find health information and resources from Nigeria Society of Physiotherapy</p>
